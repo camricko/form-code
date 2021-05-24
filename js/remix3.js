@@ -57,13 +57,13 @@ function setup() {
 
 
 function draw() {
-  background(0, 0, 0, 15)
+  // background(0, 0, 0, 5)
   for (i = 0; i < 10; i++) {
     placement()
     circles[i] = new circle(x, y)
   }
-  for (let i = 0; i < circles.length; i++) {
+  for (let i = 1; i < circles.length; i++) {
     stroke(220, Math.random()*255 + 100, Math.random()*255)
-      line(circles[i].x, circles[i].y, circles[Math.random()*circles.length].x, circles[Math.floor(Math.random()*circles.length)].y)
+    line(circles[i-1].x, circles[i-1].y, circles[i].x, circles[i].y)
   }
 }
