@@ -83,3 +83,5 @@ function distance() {
 
   // want sqrt of distX^2 + distY^2
 }
+
+// how to do it?
