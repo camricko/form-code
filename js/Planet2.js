@@ -12,8 +12,8 @@ class Planet {
     this.r = 50 + r
 
     //ox determines the origin point of the orbit
-    this.ox = width/2
-    this.oy = height/2
+    this.ox = width/5 + 20*i
+    this.oy = height/2 + 1.5*i
   }
 
 //normally called update in convention
